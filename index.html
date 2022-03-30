@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+   <section id="header">
+    <div class="container">
+        <img src="images/tz_logo.png" class="logo">
+        <div class="header-text">
+            <h2>
+                Labas!<br> Aš esu Tautvydas. </h2>
+           <span class="square"></span>
+                <p>
+                Susipažinkime - man 28-eri metai, dažnai save pristatau atvykusį iš Vilniaus, tačiau mano šaknys kilę iš Utenos.<br>
+                Nuo vaikystės visas vasaras praleisdavau lakstydamas laukais - ten mane traukė stebuklingas Gamtos grožis. Turbūt iš meilės šiam Dievo kūriniui tapau žmogumi trokštančiu stėbėti ir stebėtis...<br>
+                Šiame puslapyje glaustai papasakosiu apie savo pomėgius, profesiją ir netikėtus vingius Kelyje.<br> <strong>Tad pirmyn!</strong>
+            </p>
+            
+
+   </section> 
+
+
+
+
+<nav id="mySidenav">
+    <span id="closebtn">&times;</span>
+    <div class="menu-list">
+        <a href="#header">Pradžia</a>
+        <a href="#about">Profesija</a>
+        <a href="#pomegiai">Pomėgiai</a>
+        <a href="#footer">Susisiekite</a>
+    </div>
+</nav>
+
+<button id="menubtn">
+        <div class="menu-lines">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+        </div>
+    </button>
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var mySidenav = document.getElementById("mySidenav");
+
+        mySidenav.style.right = "-250px";
+        menubtn.onclick = function () {
+            if (mySidenav.style.right == "-250px") {
+                mySidenav.style.right = "5px";
+            }
+            else{
+                 mySidenav.style.right = "-250px";
+            }
+        }
+    </script>
+    <script>
+        var closebtn = document.getElementById("closebtn");
+        var mySidenav = document.getElementById("mySidenav");
+        
+        closebtn.onclick = function () {
+            if (mySidenav.style.right == "5px") {
+                mySidenav.style.right = "-250px";
+            }
+            else {
+                mySidenav.style.right = "-250px";
+                mySidenav.style.transition = " all 2s";
+            }
+        }
+    </script>
+
+
+
+
+  
+   <!--Profesija-->
+   <section id="about">
+       <div class="about-left-col">
+            <img src="images/cell.png">
+       </div>
+       <div class="about-right-col">
+        <div class="about-text">
+            <h2>
+                Profesija
+            </h2><br>
+            <p>
+                Vidinis troškimas daugiau pažinti aplinką pakreipė į biologijos studijas. Bene visi gyvi organizmai sudaryti iš ląstelių, kurios telkiasi į audinius, organus ir galiausiai organizmus. Turbūt dažnas žmogus susimąsto: kaip augalas auga, kodėl ir tik tam tikru meti veda vaisius ir pan.? Organizmo procesų valdymo epicentre yra ląstelės branduolys, iš kurio duodami impulsai fiziologiniams ir kitiems procesams vykti apsrendžiantiems augalo tolesnį gyvavimą. Kolegų ir mano uždavinys tuos procesus ir jų valdymą perprasti bei pritaikyti teikiant naudą žmonėms.
+            </p>
+           
+       </div>
+   </section>
+  
+    <!-- Pomegiai -->
+    
+    <section id="pomegiai">
+        <h2>Pomėgiai</h2>
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/bonsai.png">
+                <h4><strong>Bonsai</strong></h4>
+                <p>Tai specialiu būdu auginami ir formuojami medžiai, atrodantys kaip girių galiūnai.<br>
+                Šiuo japonišku menu susidomėjau daugiau nei prieš 10 metų, kai gavau dovanų pirmąjį medelį, kuris puosėlėjamas iki šios dienos!</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/golf.png">
+                <h4><strong>Vizualieji menai</strong></h4>
+                <p>Fotografijos ėmiausi siekdamas užfiksuoti begant metams besikeičiančius bonsai medelius.<br>
+                Visai atsitiktinai per savo profesiją atradau iliustravimą: pradėjau kurti įvairias schemas ar pvz.: nupiešti draugo mylimą automobilį. 👨‍🎨 </p>
+            </div>
+            <div class="feature-col">
+                <img src="images/hike.png">
+                <h4><strong>Laikas gamtoje</strong></h4>
+                <p>Panašu, kad vaikystės per daug nepasikeičiau - mėgstu kartu su artimaisiais įvairiausius žygius, žvejoti. </p><br><br><br><br>
+            </div>
+        </div>
+        
+  
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Bendraukime:</h4>
+                        <small>El. paštas:<a href="mailto:t.zalnierius@gmail.com">t.zalnierius@gmail.com</a></small>
+                    </div>
+                    <div class="link-title">
+                        <h4> </h4>
+                        <small></small>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4></h4>
+                        <small>Tautvydo Žalnieriaus puslapis 2022 ©</small>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Social Icons -->
+    <div class="social-icons">        
+        <a target="_blank" href="https://www.facebook.com/NEtautvydas/"><img src="images/facebook.png"></a>
+        <a target="_blank" href="https://www.instagram.com/tautvydaszalnier/"><img src="images/instagram.png"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/tautvydas-žalnierius-b375b8162/"><img src="images/linkedin.png"></a>
+        
+    </div>
+  
+  <script>
+       var menuBtn= document.getElementById("menuBtn");
+       var sideNav= document.getElementById("sideNav");
+
+       sideNav.style.right="-250px";
+       menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+       }
+   </script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        }
+    );
+</script>
+</body>
+</html>
